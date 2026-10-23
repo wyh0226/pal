@@ -1,0 +1,22 @@
+{
+  "predictions": [
+    {
+      "order_id": 68780,
+      "risk_score": 0.384059,
+      "pred_label": 0,
+      "model_version": "T1-XGBoost-Full-20261016"
+    },
+    {
+      "order_id": 68781,
+      "risk_score": 0.395993,
+      "pred_label": 0,
+      "model_version": "T1-XGBoost-Full-20261016"
+    },
+    {
+      "order_id": 68783,
+      "risk_score": 0.40083,
+      "pred_label": 0,
+      "model_version": "T1-XGBoost-Full-20261016"
+    }
+  ]
+}

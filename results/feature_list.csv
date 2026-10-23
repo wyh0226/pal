@@ -1,0 +1,16 @@
+feature,type,definition
+shipping_mode,categorical,order attribute
+market,categorical,order attribute
+order_region,categorical,order attribute
+payment_type,categorical,order attribute
+customer_segment,categorical,order attribute
+total_quantity,numeric,sum / count over order items
+total_sales,numeric,sum / count over order items
+total_discount,numeric,sum / count over order items
+item_count,numeric,sum / count over order items
+unique_products,numeric,sum / count over order items
+unique_categories,numeric,sum / count over order items
+net_sales,numeric,total_sales - total_discount
+discount_rate,numeric,total_discount / total_sales
+order_hour / order_dow / order_month,numeric,from order_date
+dept_qty_*  (11 columns),numeric,units bought per department

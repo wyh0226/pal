@@ -1,0 +1,89 @@
+{
+  "model_name": "t1_baseline",
+  "model_version": "T1-LogisticRegression-Full-20261016",
+  "algorithm": "LogisticRegression",
+  "feature_set": "Full",
+  "params": {
+    "C": 10
+  },
+  "threshold": 0.4081748375184487,
+  "threshold_rule": "highest validation precision with validation recall >= 0.75",
+  "fit_start": "2015-01-01",
+  "fit_end": "2017-04-01",
+  "input_columns": [
+    "order_date",
+    "shipping_mode",
+    "market",
+    "order_region",
+    "payment_type",
+    "customer_segment",
+    "total_quantity",
+    "total_sales",
+    "total_discount",
+    "item_count",
+    "unique_products",
+    "unique_categories",
+    "dept_qty_apparel",
+    "dept_qty_book_shop",
+    "dept_qty_discs_shop",
+    "dept_qty_fan_shop",
+    "dept_qty_fitness",
+    "dept_qty_footwear",
+    "dept_qty_golf",
+    "dept_qty_health_and_beauty",
+    "dept_qty_outdoors",
+    "dept_qty_pet_shop",
+    "dept_qty_technology"
+  ],
+  "required_columns": [
+    "order_date",
+    "shipping_mode",
+    "market",
+    "order_region",
+    "payment_type",
+    "customer_segment",
+    "total_quantity",
+    "total_sales",
+    "total_discount",
+    "item_count",
+    "unique_products",
+    "unique_categories"
+  ],
+  "optional_zero_columns": [
+    "dept_qty_apparel",
+    "dept_qty_book_shop",
+    "dept_qty_discs_shop",
+    "dept_qty_fan_shop",
+    "dept_qty_fitness",
+    "dept_qty_footwear",
+    "dept_qty_golf",
+    "dept_qty_health_and_beauty",
+    "dept_qty_outdoors",
+    "dept_qty_pet_shop",
+    "dept_qty_technology"
+  ],
+  "output": {
+    "risk_score": "P(late)",
+    "pred_label": "1 if risk_score >= threshold"
+  },
+  "metrics": {
+    "validation": {
+      "roc_auc": 0.7486812665126342,
+      "recall": 0.7500440063369125,
+      "precision": 0.6726124704025257,
+      "f1": 0.7092210386151797,
+      "alert_rate": 0.6353424932303681,
+      "fpr": 0.48344988344988343,
+      "threshold": 0.4081748375184487,
+      "tn": 2216,
+      "fp": 2074,
+      "fn": 1420,
+      "tp": 4261,
+      "n": 9971
+    }
+  },
+  "python_version": "3.14.6",
+  "sklearn_version": "1.9.0",
+  "xgboost_version": "3.4.1",
+  "created_at": "2026-10-16 16:15:35"
+}

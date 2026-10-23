@@ -1,0 +1,14 @@
+item,value
+Final model,"XGBoost {'colsample_bytree': 0.8, 'learning_rate': 0.03, 'max_depth': 3, 'min_child_weight': 20, 'n_estimators': 200, 'subsample': 0.8}"
+Validation ROC-AUC,0.7766
+Test ROC-AUC,0.7766
+Test late recall,0.7744
+Test precision,0.6960
+Test F1,0.7331
+Test alert rate,0.6413
+Mode-only benchmark test ROC-AUC,0.7447
+NoMode model test ROC-AUC,0.5317
+Lookup ceiling test ROC-AUC,0.7762
+XGBoost (Full) validation / test ROC-AUC,0.7766 / 0.7766
+Target ROC-AUC >= 0.80,not met
+Target recall >= 0.75,met
